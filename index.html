@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Portfolio</title>
+    <!-- Link to Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to custom CSS for additional styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom CSS to ensure smooth scrolling and font application */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        section {
+            min-height: 100vh; /* Ensure sections take full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 shadow-xl p-4 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-teal-400 mb-2 md:mb-0">Mohit Sahu</a>
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+                <li><a href="#home" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="#about" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">About</a></li>
+                <li><a href="#what-i-am-doing" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">What I'm Doing</a></li>
+                <li><a href="#internship" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Internship</a></li>
+                <li><a href="#tech-stack" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Tech Stack</a></li>
+                <li><a href="#web-projects" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Web Projects</a></li>
+                <li><a href="#certificates" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Certificates</a></li>
+                <li><a href="#contact" class="nav-link text-gray-300 hover:text-teal-400 font-medium rounded-md px-3 py-2 transition duration-300">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-gradient-to-r from-gray-900 to-slate-800 text-white pt-20">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <!-- Your Photo Column -->
+            <div class="mb-6 animate-fade-in-down">
+                <img src="photos\myphoto.jpg" alt="Your Photo" class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-lg">
+            </div>
+            <h1 class="text-5xl font-extrabold mb-4 animate-fade-in-down">Hi, I'm Mohit Sahu</h1>
+            <p class="text-2xl mb-8 animate-fade-in-up">An Aspiring <span class="font-semibold text-yellow-200">Software Engineer</span></p>
+            <a href="#about" class="bg-teal-400 text-gray-900 hover:bg-teal-500 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-pop-in">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-800 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6">About Me</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mb-8">
+                I am a passionate engineering student with a strong foundation in Information Technology . I love to build innovative solutions and continuously learn new technologies. My goal is to contribute to meaningful projects that make a real impact. In my free time, I enjoy coding personal projects, hiking, reading tech blogs .
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Education</h3>
+                    <p class="text-md"><strong>Samrat Ashok Technological Institute Vidisha</strong></p>
+                    <p class="text-sm text-gray-300">Btech - [2023-2027]</p>
+                    <p class="text-md mt-4"><strong>Govt. Naveen H. S. School Hatta [XII]</strong></p>
+                    <p class="text-sm text-gray-300">percentage-91.6%   [2022]</p>
+                    <p class="text-md mt-4"><strong>Saraswati HIgh School Hatta [X]</strong></p>
+                    <p class="text-sm text-gray-300">percentage-91 %  [2020]</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Skills </h3>
+                    <ul class="list-disc list-inside text-md">
+                        <li>Problem Solving</li>
+                        <li>Graphic Designing </li>
+                        <li>Data Analysis</li>
+                        <li>Web-Develpoment</li>
+                        <li>Version Control (Git , Netlify)</li>
+                        <li>Basics IOT and Embedded System </li>
+                        <li>Languages(Python , Basic Java , HTML, CSS, Javascript, Embedded C)</li>
+                        <li>Data Tools (Excel,Microsoft words, powerpoint)</li>
+                        <li>Photography & Editing</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Clubs </h3>
+                    <ul class="list-disc list-inside text-md">
+                        <li>Mirage (Photography Club of SATI)</li>
+                        <li>FLUX (Technical Club of SATI)</li>
+                        <li>NSS SATI (National Service Scheme)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Am Doing Section -->
+    <section id="what-i-am-doing" class="bg-gray-700 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-8">What I'm Doing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                 <!-- NEW Mini-Column 5: Front End Development Focus -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-palette text-4xl text-teal-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Front End Development</h3>
+                    <p class="text-gray-200 text-sm">Sharpening skills in modern HTML5 , CSS3, Javascript , responsive design, and framework-specific techniques for building engaging web interfaces.</p>
+                </div>
+                <!-- Mini-Column 1: Learning New Tech -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-code text-4xl text-teal-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Learning New Technologies</h3>
+                    <p class="text-gray-200 text-sm">Currently diving deep into Machine Learning , Data Science to expand my capabilities and stay updated with industry trends.</p>
+                </div>
+                <!-- Mini-Column 2: Personal Projects -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-laptop-code text-4xl text-teal-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Building Personal Projects</h3>
+                    <p class="text-gray-200 text-sm">Working on exciting side projects such as a  game, web app etc. to apply learned skills and explore new ideas.</p>
+                </div>
+                <!-- Mini-Column 3: Open Source Contributions -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-github-alt text-4xl text-teal-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Contributing to Open Source</h3>
+                    <p class="text-gray-200 text-sm">Actively engaging with open-source communities, contributing to documentation, bug fixes, new features in projects like Holi splash game in FLUX [Technical Club].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="bg-gray-800 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6">Internship Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Innovation For You</h3>
+                    <p class="text-md text-teal-400 mb-1">[In-House Internship ON IOT APPLICATION AND EMBEDDED SYSTEM SATI] | [19 MAY 2025] - [2 JUNE 2025]</p>
+                    <ul class="list-disc list-inside text-gray-200 text-sm">
+                        <li>Information to IOT, Embedded Systems & Hardware Patforms</li>
+                        <li>Arduino IDE & GPIO Programming.</li>
+                         <li>Hands-on Project Develpoment like IOT Based Street Light System , Line Follow Robot AutoMatic Street Light System .</li>
+                        <li>Collaborated with a team of 6 engineers on project.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-2xl font-semibold text-white mb-2"> Deloitte </h3>
+                    <p class="text-md text-teal-400 mb-1">[Data Analytics Job Simulation] | [june 8th 2025]</p>
+                    <ul class="list-disc list-inside text-gray-200 text-sm">
+                        <li>Assisted in Specific task to improve Data Analysis.</li>
+                        <li>Gained hands-on experience with TABLEAU.</li>
+                        <li> Data Modeling .</li>
+                    </ul>
+                     <a href="photos\deloitte.jpg" target="_blank" class="text-teal-400 hover:underline font-medium mt-4 inline-block">View Certificate</a>
+                </div>
+                 <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-2xl font-semibold text-white mb-2"> TATA Group [Virtual Inernship]</h3>
+                    <p class="text-md text-teal-400 mb-1">[Cybersecurity Analyst] | [Oct 21st 2024]</p>
+                    <ul class="list-disc list-inside text-gray-200 text-sm">
+                        <li>Assisted in Specific task to improve Critical thinking .</li>
+                        <li>Acquired expertise in IAM principles.</li>
+                        <li>Strategic alignment with bussines objectives .</li>
+                    </ul>
+                    <a href="photos\tata.jpg" target="_blank" class="text-teal-400 hover:underline font-medium mt-4 inline-block">View Certificate</a>
+                </div>
+                 <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-2xl font-semibold text-white mb-2"> Accenture </h3>
+                    <p class="text-md text-teal-400 mb-1">[ Developer and Technology Job Simulation] | [Nov 13th 2024]</p>
+                    <ul class="list-disc list-inside text-gray-200 text-sm">
+                        <li>Createed and delivered a compelling PowerPoint presentation analysing and comparing Waterfall and Agile methodologies.</li>
+                        <li>Debugged a program written in Python by fixing syntax and logic errors in this code </li>
+                    </ul>
+                    <a href="photos\accenture.jpg" target="_blank" class="text-teal-400 hover:underline font-medium mt-4 inline-block">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="bg-gradient-to-r from-slate-800 to-gray-900 text-white pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-6">My Tech Stack</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-js-square text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">JavaScript</span>
+                </div>
+                <!-- Python -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-python text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Python</span>
+                </div>
+                <!-- Java -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-java text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Java</span>
+                </div>
+                <!-- Embedded C -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-microchip text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Embedded C</span>
+                </div>
+                <!-- Git -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-git-alt text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Git</span>
+                </div>
+                <!-- Netlify -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-cloud text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Netlify</span>
+                </div>
+                <!-- HTML -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-html5 text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">HTML</span>
+                </div>
+                <!-- CSS -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fab fa-css3-alt text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">CSS</span>
+                </div>
+                <!-- Tailwind CSS -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-wind text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">Tailwind CSS</span>
+                </div>
+                <!-- SQL -->
+                <div class="flex flex-col items-center p-4 bg-gray-700 bg-opacity-50 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-database text-4xl text-teal-400 mb-4"></i>
+                    <span class="text-lg font-medium">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Web Projects Section -->
+    <section id="web-projects" class="bg-gray-800 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6">Web Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Weather-App</h3>
+                    <p class="text-sm text-gray-300 mb-3">Technologies:HTML CSS Javascript and openweathermap Api.</p>
+                    <p class="text-gray-200 mb-4">Developed a dynamic weather application using HTML, CSS, and JavaScript, hosted on Netlify for seamless deployment. Integrated OpenWeatherMap API to fetch real-time weather data and implemented responsive UI components for an optimized user experience.
+</p>
+                    <div class="flex space-x-4">
+                        <a href="https://weather-appmohit.netlify.app/" target="_blank" class="text-teal-400 hover:underline font-medium">Live Demo</a>
+                        <a href="https://app.netlify.com/teams/mohitsahu1403/projects" target="_blank" class="text-teal-400 hover:underline font-medium">Netlify</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">TO-DO List</h3>
+                    <p class="text-sm text-gray-300 mb-3">Technologies: HTML CSS Javascript Netlify</p>
+                    <p class="text-gray-200 mb-4">Developed an interactive to-do list application using HTML, CSS, and JavaScript, hosted on Netlify for seamless deployment and ensured a responsive UI for an optimized experience.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://to-dolistmohit.netlify.app/" target="_blank" class="text-teal-400 hover:underline font-medium">Live Demo</a>
+                        <a href="https://app.netlify.com/teams/mohitsahu1403/projects" target="_blank" class="text-teal-400 hover:underline font-medium">Netlify</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-left transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Flux Landing Page</h3>
+                    <p class="text-sm text-gray-300 mb-3">Technologies: HTML, CSS, JavaScript Netlify</p>
+                    <p class="text-gray-200 mb-4">Designed and developed a responsive landing page using HTML, CSS, and JavaScript, hosted on Netlify for seamless deployment and Applied CSS frameworks for styling and ensured cross-device compatibility. </p>
+                    <div class="flex space-x-4">
+                        <a href="https://fluxlandingpage.netlify.app/" target="_blank" class="text-teal-400 hover:underline font-medium">Live Demo</a>
+                        <a href="https://app.netlify.com/teams/mohitsahu1403/projects" target="_blank" class="text-teal-400 hover:underline font-medium">Netlify</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="bg-gray-700 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6">Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Certificate Card 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Graphic Desingning </h3>
+                    <p class="text-md text-gray-300 mb-3">Issued by: [Great Learning]</p>
+                    <p class="text-sm text-gray-200 mb-4">Exploring composition, typography, and color theory.- Practical exercises in image editing, layering, and effects.</p>
+                    <a href="photos\graphicdesigning.jpg" target="_blank" class="text-teal-400 hover:underline font-medium">View Certificate</a>
+                </div>
+                <!-- Certificate Card 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Python for Data Science</h3>
+                    <p class="text-md text-gray-300 mb-3">Issued by: [COGNITIVE CLASS.ai]</p>
+                    <p class="text-sm text-gray-200 mb-4">The Python 101 for Data Science course by IBM introduces fundamental Python programming concepts, including data structures, visualization, and analysis.</p>
+                    <a href="photos\python.jpg" target="_blank" class="text-teal-400 hover:underline font-medium">View Certificate</a>
+                </div>
+                <!-- Certificate Card 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Competition</h3>
+                    <p class="text-md text-gray-300 mb-3">Issued by: [FLUXUS Indore]</p>
+                    <p class="text-sm text-gray-200 mb-4">participated in National Level Technical Competition.</p>
+                    <a href="photos\fluxus.jpg" target="_blank" class="text-teal-400 hover:underline font-medium">View Certificate</a>
+                </div>
+                <!-- Add more certificate cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="bg-gradient-to-r from-gray-900 to-slate-800 text-white pt-20">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+            <p class="text-lg mb-8">
+                Feel free to reach out to me for collaborations, job opportunities, or just to say hello!
+            </p>
+             <!-- UPDATED FORM TAG -->
+        <form action="https://formspree.io/f/mqabqvyz" method="POST" class="bg-gray-700 p-8 rounded-lg shadow-xl space-y-6 text-left">
+            <div>
+                <label for="name" class="block text-gray-200 text-sm font-bold mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400 bg-gray-800 border-gray-600" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="email" class="block text-gray-200 text-sm font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400 bg-gray-800 border-gray-600" placeholder="your.email@example.com" required>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-200 text-sm font-bold mb-2">Message:</label>
+                <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400 bg-gray-800 border-gray-600" placeholder="Your message..." required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Send Message</button>
+            </div>
+        </form>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <!-- Email with Icon -->
+                <a href="mailto:mohitsahu1403@gmail.com" class="text-white text-lg hover:text-yellow-200 transition duration-300 flex items-center space-x-2">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <span>mohitsahu1403@gmail.com</span>
+                </a>
+                <!-- LinkedIn with Icon -->
+                <a href="https://www.linkedin.com/in/mohit-sahu-ba4966301/" target="_blank" class="text-white text-lg hover:text-yellow-200 transition duration-300 flex items-center space-x-2">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    <span>LinkedIn </span>
+                </a>
+                <!-- GitHub with Icon -->
+                <a href="https://github.com/mohitsahu0302" target="_blank" class="text-white text-lg hover:text-yellow-200 transition duration-300 flex items-center space-x-2">
+                    <i class="fab fa-github text-2xl"></i>
+                    <span>GitHub</span>
+                </a>
+                <!-- Instagram with Icon -->
+                <a href="https://www.instagram.com/ll_mohit_02_ll/" target="_blank" class="text-white text-lg hover:text-yellow-200 transition duration-300 flex items-center space-x-2">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span>Instagram </span>
+                </a>
+                <!-- Phone Number with Icon and Text -->
+                <a href="tel:+917898184673" class="text-white text-lg hover:text-yellow-200 transition duration-300 flex items-center space-x-2">
+                    <i class="fas fa-phone text-2xl"></i>
+                    <span>7898184673</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Column -->
+    <section id="resume" class="bg-gray-800 pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6">Download My Resume</h2>
+            <div class="flex flex-col items-center space-y-4">
+                <a href="path/to/your/resume.pdf" download class="bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-6 text-center text-sm">
+        <div class="container mx-auto">
+            <p> Thankyou for visiting my portfolio! </p>
+        </div>
+    </footer>
+
+    <!-- Link to custom JavaScript for interactive elements -->
+    <script src="script.js"></script>
+</body>
+</html>

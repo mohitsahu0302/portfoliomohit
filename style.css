@@ -1,0 +1,77 @@
+/*
+ * style.css
+ * This file contains custom CSS rules for the Engineering Student Portfolio website.
+ * Most of the styling is handled by Tailwind CSS utility classes directly in index.html.
+ * This file is intended for specific overrides, custom animations, or complex layouts
+ * that are not easily achievable with Tailwind's utility-first approach alone.
+ */
+
+/* Custom keyframe animations for entrance effects */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations to specific elements */
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Delay for sequential animation */
+}
+
+.animate-pop-in {
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.6s; /* Delay for sequential animation */
+}
+
+/*
+ * Note on Responsiveness:
+ * Tailwind CSS handles responsiveness primarily through utility class prefixes
+ * (e.g., `md:text-lg`, `lg:grid-cols-3`).
+ * This `style.css` file would primarily be for non-Tailwind specific responsive
+ * adjustments if needed, or if a global CSS property needs to be applied differently
+ * across breakpoints outside of Tailwind's system.
+ *
+ * Example (uncomment if needed, but Tailwind classes are preferred):
+ * @media (max-width: 768px) {
+ * .container {
+ * padding-left: 1rem;
+ * padding-right: 1rem;
+ * }
+ * .nav-link {
+ * padding: 8px 12px;
+ * font-size: 0.9rem;
+ * }
+ * }
+ */
